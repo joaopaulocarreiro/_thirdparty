@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/11">
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <link rel="stylesheet" type="text/css" href="css/master-page.css" />  
+</head>
+
+<body>
+	
+<!-- wrap START -->
+<div id="wrap">
+
+<!-- container START -->
+<div id="container">
+
+  <!-- header START -->
+  <div id="header">
+    <div id="title">
+      <h1 id="caption">
+        <a href="/">saborearacores.pt</a>
+      </h1>
+      <div id="tagline">An analog guy in a digital world</div>
+    </div>	  
+  </div>
+  <!-- header END -->
+
+  <!-- content START -->
+  <div id="content">
+  </div>
+  <!-- content END -->
+
+  <!-- footer START -->
+  <div id="footer">
+  </div>
+  <!-- footer END -->
+
+</div>
+<!-- container END -->
+
+</div>
+<!-- wrap END -->
+
+</body>
+</html>
+

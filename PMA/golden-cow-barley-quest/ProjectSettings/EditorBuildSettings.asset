@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Game/Scenes/Menu.unity
+    guid: 742115c49caac7c4cada79107d34deb3
+  - enabled: 1
+    path: Assets/Game/Points/Clue_P1.unity
+    guid: 724f299d430ae3540b89c4158775c665
+  - enabled: 1
+    path: Assets/Game/Points/Clue_P2.unity
+    guid: c83a6c95c3615354790b294635f9a6f9
+  - enabled: 1
+    path: Assets/Game/Points/Clue_P3.unity
+    guid: feebefe13fb332e4d855b6b36b11397b
+  - enabled: 1
+    path: Assets/Game/Points/Clue_P4.unity
+    guid: 3e40effe48e27104eb7a2b59a6d8ed8b
+  - enabled: 1
+    path: Assets/Game/Points/Clue_P5.unity
+    guid: fdee3909bff03f344b5a148b2c140fb9
+  - enabled: 1
+    path: Assets/Game/Points/Prize_P1.unity
+    guid: 93de519eeaf94f34686aa41232c46995
+  - enabled: 1
+    path: Assets/Game/Points/Prize_P2.unity
+    guid: 515f490c28e226743ae8228b19df90fc
+  - enabled: 1
+    path: Assets/Game/Points/Prize_P3.unity
+    guid: 9934c3b79f6b1f34aa645205ed35d37b
+  - enabled: 1
+    path: Assets/Game/Points/Prize_P4.unity
+    guid: 5e60c7cd1dbc24f47a8d17d873c3cb89
+  - enabled: 1
+    path: Assets/Game/Points/Prize_P5.unity
+    guid: d966090d37315f14988f7094a336eff8
+  - enabled: 1
+    path: Assets/Game/Points/Puzzle_P1.unity
+    guid: e3489835410a8354aaa2e33690333aad
+  - enabled: 1
+    path: Assets/Game/Points/Puzzle_P2.unity
+    guid: 6dd91ce19a2197144b97d99838876bfe
+  - enabled: 1
+    path: Assets/Game/Points/Puzzle_P3.unity
+    guid: 7688c2e9487b6fe4cb32456218ad85b9
+  - enabled: 1
+    path: Assets/Game/Points/Puzzle_P4.unity
+    guid: 7576f17db860c5b49bc6fb52fa018336
+  - enabled: 1
+    path: Assets/Game/Points/Puzzle_P5.unity
+    guid: ea8a26c01496dd144a4a11e3fdda617b
+  - enabled: 1
+    path: Assets/Game/Scenes/navigation.unity
+    guid: 417df2a5a1191fe4886706baa71731e9
+  - enabled: 1
+    path: Assets/Game/Scenes/StoryVideo.unity
+    guid: 9dc20eb5cf29c574c82f98d348082c7b
+  m_configObjects: {}

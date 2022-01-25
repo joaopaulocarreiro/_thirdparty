@@ -1,0 +1,166 @@
+
+								COFACO-SGQ
+						Sistema de Gestão da Qualidade
+
+					  Arquitetura da Solução - Sistemas
+					 
+****-----------------------------------------------------------------------****
+
+	SISTEMA DE GESTÃO DE UTILIZADORES (User Management System - UMS)
+	-----------------------------------------------------------------------
+	
+	REQUISITOS:
+		
+		- Configuração:
+		  - Definir esquema (conjunto de campos e seus tipos) para a 
+			  informação que é armazenada sobre os utilizadores);
+          - Definir Username e Password para o SuperUser;
+		- Autenticação:
+		  - Autenticar Utilizador;
+        - Autorização (Conjunto de Permissões):
+          - Criar Utilizadores;
+          - Editar Utilizadores;
+          - Ver Utilizadores;
+          - Remover Utilizadores;
+          - Criar Grupos;
+          - Editar Grupos (Definições: e.g. Titulo e Descrição);
+          - Ver Grupos;
+          - Remover Grupos;
+          - Adicionar/Remover Utilizadores a Grupos;
+        - Utilizadores:
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+        - Grupos:
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+          - Adicionar e remover utilizadores de um grupo;
+   
+	SISTEMA DE GESTÃO DE CONTEÚDOS (Content Management System - CMS)
+	-----------------------------------------------------------------------
+	
+	REQUISITOS:	
+
+		- Configuração:
+			- Definir SuperUser;
+			- Definir qual o Sistema de Gestão de Utilizadores a utilizar;
+        - Autorização (Conjunto de Permissões):
+          - Criar Tipo de Conteúdo;
+          - Ver Tipo de Conteúdo;
+          - Editar Tipo de Conteúdo;
+          - Remover Tipo de Conteúdo;
+          - Criar Lista;
+          - Ver Lista;
+          - Editar Lista;
+          - Remover Lista;
+          - Criar Item;
+          - Ver Item;
+          - Editar Item;
+          - Remover Item;
+        - Tipos de Conteúdos (Content Types)
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+        - Clusters:
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+          - Definir Permissões 
+            (Grupos de Utilizadores vs. Conjunto de Permissões)
+        - Listas (Lists)
+          - Criar (com base num Tipo de Conteúdo e associada a um Cluster);
+          - Listar;
+          - Editar (Definições: e.g. Titulo, Descrição e Tipo de Conteúdo)
+          - Remover;
+          - Definir Permissões 
+            (Grupos de Utilizadores vs. Conjunto de Permissões)
+        - Bibliotecas (Libraries)
+          - Criar (com base num Tipo de Conteúdo e associada a um Cluster);
+          - Listar;
+          - Editar (Definições: e.g. Titulo, Descrição e Tipo de Conteúdo)
+          - Remover;
+          - Definir Permissões 
+            (Grupos de Utilizadores vs. Conjunto de Permissões)
+        - Pastas (associados a uma Lista):
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+          - Definir Permissões 
+            (Grupos de Utilizadores vs. Conjunto de Permissões)
+        - Vistas (associados a uma Lista/Biblioteca):
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+        - Items (associados a uma Lista):
+          - Criar;
+          - Listar;
+          - Editar;
+          - Remover;
+        - Blobs (associados a uma Biblioteca):
+          - Criar/Upload;
+          - Listar;
+          - Editar;
+          - Remover;
+
+    SISTEMA DE GESTÃO DE INTERFACES (Interface Management System - IMS)
+    -----------------------------------------------------------------------
+	
+	REQUISITOS:
+		
+		- Configuração:
+		  - Definir SuperUser;
+		  - Definir qual o Sistema de Gestão de Utilizadores associado;
+		  - Definir qual o Sistema de Gestão de Conteúdos associado;
+		- Páginas:
+		  - As páginas são armazenadas utilizar o CMS associado, logo
+		    herdam todas as caracteristicas e funcionalidades das 
+			bibliotecas do referido sistema.
+
+Módulos:
+
+  - Utilizadores
+      - definição perfil dos utilizadores
+      - CRUD utilizadores + grupos
+  - Produto
+  - Processo:
+      Plano de Higienizaçào
+      Prototipo funcional com:
+        - 2/Oct/2015
+        - definição dos registos (formularios)
+        - definição dos relatorios (tabelas e graficos)
+        - gestão dos utilizadores
+        - importacao inicial dos dados das folhas de excel
+  -  Auditoria
+        Ex. (iAuditor - iOS)
+        Tipificaçòes (enums)
+        Não Conformidades:
+        Fotos
+        Observações
+  - Manutençào
+        Intervenções
+        Plano de intervencoes
+        Custo de cada intervencao
+        Comparacao entre real e planeado
+        Custos das intervencoes
+        Stock
+        Algoritmos de previsão
+
+         
+Requisitos:
+  - Alertas (email, runtime, signalr)
+  - Construção de items (entidades)
+  - Registo offline dos items
+  - Construção de gráficos customizados
+  
+Infra-estrutura:
+  Windows Server 2012 R2
+  SQL Server (not available)
+  MySQL
+  IIS (not available)

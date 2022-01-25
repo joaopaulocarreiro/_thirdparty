@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<script name="bag" version="1.0">
+    <type-decl name="appAST" class="omc.model.bApplication"/>
+
+    <foreign name="appXMLParser" class="omc.engines.engXMLApplicationParser">
+        <sign>
+            <param kind="out" type="appAST" name="p1"/>
+        </sign>
+    </foreign>
+
+    <foreign name="appPrettyPrint" class="omc.engines.engApplicationPrettyPrint">
+        <sign>
+            <param kind="in" type="appAST" name="p1"/>
+        </sign>
+    </foreign>
+
+    <function name="main">
+        <sign>
+            <param kind="in" type="type" name="p1"/>
+        </sign>
+        <block>
+            <var-decl name="a" type="appAST"/>
+            <var-decl name="b" type="appAST"/>
+            <stmt-expr>
+                <fun-call name="appXMLParser">
+                    <args>
+                        <var name="a"/>
+                    </args>
+                </fun-call>
+            </stmt-expr>
+        </block>
+    </function>
+</script>
+
+<!--
+
+type appAST;
+
+engine appXMLParser (out p1:appAST);
+engine appPrettyPrint (in p1:appAST);
+
+function main () {
+var a:appAST;;
+appXMLParser(a);
+appPrettyPrint(a);
+var b:appAST;
+b = a;
+}
+
+-->

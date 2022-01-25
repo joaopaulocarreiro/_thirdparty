@@ -1,0 +1,22 @@
+C:\Work\Projects\OMC\OMC\bin\Debug\OMC.exe
+C:\Work\Projects\OMC\OMC\bin\Debug\OMC.pdb
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\OMC.exe
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\OMC.pdb
+C:\Work\Projects\Butterfly\OMC\bin\Debug\Butterfly.exe
+C:\Work\Projects\Butterfly\OMC\bin\Debug\Butterfly.pdb
+C:\Work\Projects\Butterfly\OMC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\Butterfly\OMC\obj\x86\Debug\Butterfly.exe
+C:\Work\Projects\Butterfly\OMC\obj\x86\Debug\Butterfly.pdb
+C:\Work\Projects\Butterfly\Butterfly\bin\Debug\Butterfly.exe
+C:\Work\Projects\Butterfly\Butterfly\bin\Debug\Butterfly.pdb
+C:\Work\Projects\Butterfly\Butterfly\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\Butterfly\Butterfly\obj\x86\Debug\Butterfly.exe
+C:\Work\Projects\Butterfly\Butterfly\obj\x86\Debug\Butterfly.pdb
+C:\Work\2. FCSolutions\Projects\Butterfly\Implementation\Compiler\Butterfly\obj\x86\Debug\Butterfly.exe
+C:\Work\2. FCSolutions\Projects\Butterfly\Implementation\Compiler\Butterfly\obj\x86\Debug\Butterfly.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\Butterfly\bin\Debug\Butterfly.exe
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\Butterfly\bin\Debug\Butterfly.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\Butterfly\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\Butterfly\obj\x86\Debug\Butterfly.exe
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\Butterfly\obj\x86\Debug\Butterfly.pdb

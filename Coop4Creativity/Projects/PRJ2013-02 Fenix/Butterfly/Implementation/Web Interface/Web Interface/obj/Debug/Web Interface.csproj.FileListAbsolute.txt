@@ -1,0 +1,5 @@
+C:\Work\Projects\Butterfly\Web Interface\bin\Butterfly Web.dll
+C:\Work\Projects\Butterfly\Web Interface\bin\Butterfly Web.pdb
+C:\Work\Projects\Butterfly\Web Interface\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\Butterfly\Web Interface\obj\Debug\Butterfly Web.dll
+C:\Work\Projects\Butterfly\Web Interface\obj\Debug\Butterfly Web.pdb

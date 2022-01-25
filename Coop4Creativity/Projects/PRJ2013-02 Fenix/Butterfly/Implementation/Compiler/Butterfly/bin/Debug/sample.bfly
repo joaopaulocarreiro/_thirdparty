@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<compiler name="sample">
+  <load-module name="light-forms" path="c:\Work\2. FC Solutions\DEsenvolvimento\Butterfly\Implementation\Compiler\LightForms\bin\Debug\LightForms.dll"/>  
+  <load-engine name="parser" module="light-forms" class="LightForms.Engines.Parser" />
+  <method name="main">
+    <call name="parser" />
+  </method>
+  <call-method name="main" />
+</compiler>

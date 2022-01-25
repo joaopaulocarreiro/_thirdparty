@@ -1,0 +1,5 @@
+C:\Work\2. FCSolutions\Projects\Janua\Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Projects\Janua\Core\bin\Debug\Janua.Core.dll
+C:\Work\2. FCSolutions\Projects\Janua\Core\bin\Debug\Janua.Core.pdb
+C:\Work\2. FCSolutions\Projects\Janua\Core\obj\Debug\Janua.Core.dll
+C:\Work\2. FCSolutions\Projects\Janua\Core\obj\Debug\Janua.Core.pdb

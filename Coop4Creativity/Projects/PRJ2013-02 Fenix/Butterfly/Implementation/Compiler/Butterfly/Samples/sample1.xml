@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<app>
+  
+  <!-- app info. -->
+  <app-info>
+    <name>sample1</name>
+    <version>1.0</version>
+    <description>sample aplication for testing</description>
+    <date>14-05-2011</date>
+    <author>João Paulo Carreiro</author>
+    <icon></icon>
+  </app-info>
+  
+  <!-- content types. -->
+  <content-type name="Person" parent="Object">
+    <field name="Name" type="String" />
+    <field name="Address" type="String" />
+    <field name="DateOfBirth" type="Date" />
+    <field name="Picture" type="Image">
+      <attr name="DefaultValue" value="member.png" />
+    </field>
+  </content-type>
+  
+  <!-- field maps. -->
+  <field-map name="map1">
+    <map src="" dst="" />
+  </field-map>
+
+  <!-- library -->
+  <library name="Images">
+    <add content-type="Person" />
+  </library>
+
+  <!-- file system -->
+  <file-system>
+    <folder name="root">
+      <folder name="person">
+        <add content-type="Person" />
+      </folder>
+    </folder>
+  </file-system>
+  
+</app>

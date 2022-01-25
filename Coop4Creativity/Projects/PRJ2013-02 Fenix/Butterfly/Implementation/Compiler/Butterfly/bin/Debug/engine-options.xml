@@ -1,0 +1,4 @@
+<options>
+  <option engine="parser" name="inputFile" value="sample.xml" />
+  <option engine="zoina" name="verbose" value="low" />  
+</options>

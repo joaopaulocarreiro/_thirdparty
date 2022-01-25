@@ -1,0 +1,21 @@
+C:\Work\Projects\OMC\LightForms\bin\Debug\LightForms.dll
+C:\Work\Projects\OMC\LightForms\bin\Debug\LightForms.pdb
+C:\Work\Projects\OMC\LightForms\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\OMC\LightForms\obj\Debug\LightForms.dll
+C:\Work\Projects\OMC\LightForms\obj\Debug\LightForms.pdb
+C:\Work\Projects\OMC\LightForms\bin\Debug\OMC.exe
+C:\Work\Projects\OMC\LightForms\bin\Debug\OMC.pdb
+C:\Work\Projects\Butterfly\LightForms\bin\Debug\LightForms.dll
+C:\Work\Projects\Butterfly\LightForms\bin\Debug\LightForms.pdb
+C:\Work\Projects\Butterfly\LightForms\bin\Debug\Butterfly.exe
+C:\Work\Projects\Butterfly\LightForms\bin\Debug\Butterfly.pdb
+C:\Work\Projects\Butterfly\LightForms\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\Butterfly\LightForms\obj\Debug\LightForms.dll
+C:\Work\Projects\Butterfly\LightForms\obj\Debug\LightForms.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\bin\Debug\LightForms.dll
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\bin\Debug\LightForms.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\bin\Debug\Butterfly.exe
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\bin\Debug\Butterfly.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\obj\Debug\LightForms.dll
+C:\Work\2. FCSolutions\Desenvolvimento\Butterfly\Implementation\Compiler\LightForms\obj\Debug\LightForms.pdb

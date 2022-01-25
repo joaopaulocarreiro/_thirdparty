@@ -1,0 +1,57 @@
+﻿/**
+ * Layout section.
+ * Set of CSS classes used for building space layouts in HTML pages.
+ */
+
+.layout-w25,
+.layout-w33,
+.layout-w50,
+.layout-w66,
+.layout-w75,
+.layout-w100
+{
+    margin:0;
+    white-space:normal;
+    word-wrap:break-word;
+}
+
+.layout-w25
+{
+    width:23%;
+    padding:1%;
+}
+
+.layout-w33
+{
+    width:31%;
+    padding:1%;
+}
+
+.layout-w50
+{
+    width:48%;
+    padding:1%;
+}
+
+.layout-w67
+{
+    width:65%;
+    padding:1%;
+}
+
+.layout-w75 
+{
+    width:73%;
+    padding:1%;
+}
+
+.layout-w100
+{
+    width:98%;
+    padding:1%;
+}
+
+.layout-sideByside 
+{
+    float:left; 
+}

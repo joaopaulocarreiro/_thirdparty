@@ -1,0 +1,15 @@
+C:\Work\Projects\Walkin2011\Walkin2011\bin\Walkin2011.dll
+C:\Work\Projects\Walkin2011\Walkin2011\bin\Walkin2011.pdb
+C:\Work\Projects\Walkin2011\Walkin2011\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\Walkin2011\Walkin2011\obj\Debug\Walkin2011.dll
+C:\Work\Projects\Walkin2011\Walkin2011\obj\Debug\Walkin2011.pdb
+C:\Work\2. FCSolutions\Projects\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\bin\Walkin2011.dll
+C:\Work\2. FCSolutions\Projects\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\bin\Walkin2011.pdb
+C:\Work\2. FCSolutions\Projects\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Projects\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\Walkin2011.dll
+C:\Work\2. FCSolutions\Projects\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\Walkin2011.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\bin\Walkin2011.dll
+C:\Work\2. FCSolutions\Desenvolvimento\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\bin\Walkin2011.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Desenvolvimento\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\Walkin2011.dll
+C:\Work\2. FCSolutions\Desenvolvimento\Walkin\Implementation\Walkin (ASP.NET)\Walkin2011\obj\Debug\Walkin2011.pdb

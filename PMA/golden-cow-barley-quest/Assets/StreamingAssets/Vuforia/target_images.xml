@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="cantinho_4" size="50.000000 45.296165" />
+    <ImageTarget name="cantinho_3" size="50.000000 44.117645" />
+    <ImageTarget name="cantinho_2" size="50.000000 44.981411" />
+    <ImageTarget name="cantinho_1" size="50.000000 42.114697" />
+    <ImageTarget name="p_6" size="50.000000 86.058983" />
+    <ImageTarget name="p_5" size="50.000000 79.629631" />
+    <ImageTarget name="p_4" size="50.000000 78.086418" />
+    <ImageTarget name="p_3" size="50.000000 84.000000" />
+    <ImageTarget name="p_1" size="50.000000 100.467293" />
+    <ImageTarget name="royal_5" size="50.000000 28.860294" />
+    <ImageTarget name="royal_2" size="50.000000 29.061373" />
+    <ImageTarget name="royal_1" size="50.000000 28.409090" />
+    <ImageTarget name="UM_2" size="50.000000 71.134018" />
+    <ImageTarget name="UM_1" size="50.000000 58.008659" />
+    <ImageTarget name="solmar_3" size="50.000000 15.851851" />
+    <ImageTarget name="solmar_1" size="50.000000 15.845071" />
+  </Tracking>
+</QCARConfig>

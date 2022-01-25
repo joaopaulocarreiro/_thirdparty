@@ -1,0 +1,7 @@
+	Walkin - Notas:
+
+	Classificação do hotel:
+		- Duas boxes: Uma com a tipologia (Hotel. Apart, etc.)
+			      Outra com o numero de estrelas;
+
+

@@ -1,0 +1,25 @@
+
+	Portal - Restaurantes : Açores
+	==============================
+
+	- Fotografia com a especialidade da casa (ex: bife á Alcides)
+	- Localização do Restaurante
+	- Ementas (fotos dos pratos +  preços)
+	- Contacto do restaurante (email, telefone, telemovel)
+	- Procura de restaurantes
+	- Procura de pratos (nome, género, preço, etc..)
+	- restaurantes organizados por ilha/concelho
+	- zona para os restaurantes actualizarem as suas ementas
+	- links para os sites dos restaurantes
+	- carta de apresentação do dono/chef
+	- mapa em 3d com a ilha de são miguel dividida em concelhos
+	- reservas online (pacotes premium)
+	- fotos do restaurante
+	- fotos panoramicas dos espaco do restaurante
+	- estudo de base: Observatório do turismo
+	- apresentação do site + objectivo
+	- 
+
+		
+
+

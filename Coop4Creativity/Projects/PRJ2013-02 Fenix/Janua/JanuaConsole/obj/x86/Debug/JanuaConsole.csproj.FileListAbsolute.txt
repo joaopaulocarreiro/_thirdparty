@@ -1,0 +1,10 @@
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\JanuaConsole.exe.config
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\JanuaConsole.exe
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\JanuaConsole.pdb
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\obj\x86\Debug\JanuaConsole.exe
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\obj\x86\Debug\JanuaConsole.pdb
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\Janua.Core.dll
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\Janua.Util.dll
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\Janua.Core.pdb
+C:\Work\2. FCSolutions\Projects\Janua\JanuaConsole\bin\Debug\Janua.Util.pdb

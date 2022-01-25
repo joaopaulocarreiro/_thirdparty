@@ -1,0 +1,958 @@
+<?xml version='1.0'?>
+<kawaproject>
+<versioninfo>
+<documentversion>
+<major>"0"</major>
+<minor>"1"</minor>
+</documentversion>
+<productversion>
+<value>"121"</value>
+</productversion>
+</versioninfo>
+<path>"c:\Genetic\"</path>
+<classpaths>
+<classpath enabled="1">
+<value>"C:\Genetic\"</value>
+</classpath>
+<classpath enabled="1">
+<value>"C:\Genetic\GP_kit\"</value>
+</classpath>
+</classpaths>
+<xbootclasspaths>
+</xbootclasspaths>
+<profile>
+<name>"Profile 1"</name>
+</profile>
+<runfile>
+</runfile>
+<items>
+<folder>
+<name>"Genetic_Programming_Kit"</name>
+<relativepath>"..\..\Genetic\Genetic_Programming_Kit.kpx"</relativepath>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+<virtualfolder>
+<name>"EndRun"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\EndRun\bestInd.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\EndRun\EndRun.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Expressions"</name>
+<virtualfolder>
+<name>"Elements"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\Elements\Constant.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\Elements\Function.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\Elements\Symbol.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\Elements\Terminal.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\Elements\Variable.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\expressionTree.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\functionNode.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Expressions\terminalNode.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Fitness"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Fitness\adjustedFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Fitness\proportionateFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Fitness\rawFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Fitness\standardFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"GeneratorFunctions"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\generateFULL.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\generateGROW.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\generateIndividual.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\generatePopulation.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\rampedHalf_and_Half.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneratorFunctions\RandomAttempsExpiredException.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"GeneticOperators"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneticOperators\CrossOver.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneticOperators\geneticOperator.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="1735345" y="1735854" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneticOperators\Mutation.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GeneticOperators\Reproduction.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"GPrun"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\GPrun\GPrun.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Misc"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Misc\depthRamp.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Misc\Misc.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Misc\Standard.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Parameters"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Parameters\paramBreed.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Parameters\paramGlobal.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="17849576" y="17849496" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Parameters\paramInitPopulation.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Parameters\paramLimits.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Parameters\paramOutput.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Population"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Population\Generation.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Population\Individual.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Population\Population.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Population\PopulationRepeatedIndividualException.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Population\Statistics.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Selection"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Selection\FitnessProportionate.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Selection\OverSelection.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Selection\selectMethod.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Selection\Tournament.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<virtualfolder>
+<name>"Specific"</name>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\add.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\ERConstant.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\errorFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\errorStandardFitness.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\fitnessCase.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\mul.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\pdiv.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\quad.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\sub.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\Specific\Value.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</virtualfolder>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\teste.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="0" y="0" width="0" height="0">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\teste2.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="6881395" y="7209071" width="7798876" height="7209065">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+<file>
+<dirty>"0"</dirty>
+<relativepath>"GP_kit\teste3.java"</relativepath>
+<editor open="0">
+<selection start="0" end="0">
+</selection>
+<window x="1869639017" y="1344304242" width="1819635823" height="1869182049">
+</window>
+</editor>
+<scmstatus id="0">
+<userstring>""</userstring>
+<userinteger>"0"</userinteger>
+</scmstatus>
+</file>
+</folder>
+</items>
+<compileroptions debug="0" nowarning="0" optimize="0" verbose="0" deprecated="0" usefilelist="0">
+<outputdirvalues checked="0">
+</outputdirvalues>
+<customoptions checked="0">
+</customoptions>
+</compileroptions>
+<interpreteroptions debug="0" nogc="0" verbosegc="0" verbose="0" checksrc="0" verifieroff="0" verifieron="0" verifierremote="0" classic="0">
+<commandlineargs checked="0">
+</commandlineargs>
+<runclassnames checked="0">
+<runclassname selected="0">
+<value>""</value>
+</runclassname>
+</runclassnames>
+<executedirs checked="0">
+<executedir selected="0">
+<value>""</value>
+</executedir>
+</executedirs>
+<customoptions checked="0">
+<customoption selected="0">
+<value>""</value>
+</customoption>
+</customoptions>
+<maxmemory checked="0">
+<value>""</value>
+</maxmemory>
+<startmemory checked="0">
+<value>""</value>
+</startmemory>
+<javacodestack checked="0">
+<value>""</value>
+</javacodestack>
+<ccodestack checked="0">
+<value>""</value>
+</ccodestack>
+<propertyvalues checked="0">
+<propertyvalue selected="0">
+<value>""</value>
+</propertyvalue>
+</propertyvalues>
+<debugger>
+<remote checked="0">
+<host checked="0">
+<value>""</value>
+</host>
+<password checked="0">
+<value>""</value>
+</password>
+<port checked="0">
+<value>""</value>
+</port>
+<connector checked="0">
+<value>""</value>
+</connector>
+</remote>
+<jvmdidebug checked="0">
+</jvmdidebug>
+<multithreading checked="0">
+</multithreading>
+<excludejdkclasses checked="0">
+</excludejdkclasses>
+<breakonuncaughtexceptions checked="0">
+</breakonuncaughtexceptions>
+</debugger>
+</interpreteroptions>
+<javadocoptions version="1" type="1" author="1" noindex="0" notree="0" nodeprecated="0">
+<outputdirvalues checked="0">
+<outputdirvalue selected="1">
+<value>"C:\Genetic"</value>
+</outputdirvalue>
+</outputdirvalues>
+<customoptions checked="0">
+<customoption selected="0">
+<value>""</value>
+</customoption>
+</customoptions>
+</javadocoptions>
+<rmioptions useprojectclasspath="0" debugtables="0" depend="0" debug="0" optimize="0" nowarn="0" verbose="0" nowrite="0" keepgenerated="0" show="0">
+<outputdirs checked="0">
+<outputdir selected="0">
+<value>""</value>
+</outputdir>
+</outputdirs>
+<stubdirs checked="0">
+<stubdir selected="0">
+<value>""</value>
+</stubdir>
+</stubdirs>
+<skeldirs checked="0">
+<skeldir selected="0">
+<value>""</value>
+</skeldir>
+</skeldirs>
+<customoptions checked="0">
+<customoption selected="0">
+<value>""</value>
+</customoption>
+</customoptions>
+<files>
+</files>
+</rmioptions>
+<kawajar>
+<value>""</value>
+</kawajar>
+<ejboptions>
+<servername>""</servername>
+</ejboptions>
+<breakpoints>
+</breakpoints>
+<exceptions>
+</exceptions>
+<debuggersourcedirs checked="0">
+</debuggersourcedirs>
+</kawaproject>

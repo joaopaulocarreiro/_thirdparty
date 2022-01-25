@@ -1,0 +1,5 @@
+<options>
+  <option name="compiler-filename" value="sample.bfly"></option>
+  <option name="engine-options-filename" value="engine-options.xml"></option>
+  <option name="verbose-level" value="high"></option>
+</options>

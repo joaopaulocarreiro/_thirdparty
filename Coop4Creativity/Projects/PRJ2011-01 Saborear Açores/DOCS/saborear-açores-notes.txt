@@ -1,0 +1,17 @@
+Saborear Açores
+
+Requisitos:
+
+. Banner Personalizado (Header do Site)
+- Publicidade
+- Contatos
+- Formulário de Adesão p/ Restaurantes
+- Pesquisa/Filtros de Restaurantes (Listagem de Restaurantes)
+- Página dedicada para cada Restaurante 
+- Medidor de Visitas
+- Politica Editorial
+- Ficha Técnica
+- Politica de Privacidade
+
+Sites exemplo:
+	http://www.izigo.pt/

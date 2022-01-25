@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Walkin2011.SiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head runat="server">
+  <title>Walkin 2011</title>
+  <link href="~/Styles/site.css" rel="stylesheet" type="text/css" />
+  <link href="~/Styles/layout.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/Scripts/fisheye-iutil.min.js"></script>
+  <script type="text/javascript" src="/Scripts/dock-main.js"></script>
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+ </head>
+ <body>
+  <form class="page" runat="server">
+    <!-- header -->
+    <div class="header">
+     <div class="title">
+      <h1>Walkin 2011</h1>
+      <p>Prototype Edition</p>
+     </div>
+     <!-- login control -->
+     <div class="loginDisplay">
+      <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+       <AnonymousTemplate>
+        <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">entrar</a>
+       </AnonymousTemplate>
+       <LoggedInTemplate>
+        <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>
+        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+       </LoggedInTemplate>
+      </asp:LoginView>
+     </div>
+     <!-- main navigation -->
+		<!-- BEGIN DOCK 1 ============================================================ -->
+		<div id="dock">
+			<div class="dock-container">
+				<a class="dock-item" href="index.html"><span>Example&nbsp;1</span><img src="/Styles/images/dock/home.png" alt="home" /></a> 
+				<a class="dock-item" href="example2.html"><span>Example&nbsp;2</span><img src="/Styles/images/dock/email.png" alt="contact" /></a> 
+				<a class="dock-item" href="example3.html"><span>Example&nbsp;3</span><img src="/Styles/images/dock/portfolio.png" alt="portfolio" /></a> 
+				<a class="dock-item" href="all-examples.html"><span>All&nbsp;Examples</span><img src="/Styles/images/dock/music.png" alt="music" /></a> 
+				<a class="dock-item" href="#"><span>Video</span><img src="/Styles/images/dock/video.png" alt="video" /></a> 
+				<a class="dock-item" href="#"><span>History</span><img src="/Styles/images/dock/history.png" alt="history" /></a> 
+				<a class="dock-item" href="#"><span>Calendar</span><img src="/Styles/images/dock/calendar.png" alt="calendar" /></a> 
+				<a class="dock-item" href="#"><span>Links</span><img src="/Styles/images/dock/link.png" alt="links" /></a> 
+				<a class="dock-item" href="#"><span>RSS</span><img src="/Styles/images/dock/rss.png" alt="rss" /></a> 
+				<a class="dock-item" href="#"><span>RSS2</span><img src="/Styles/images/dock/rss2.png" alt="rss" /></a> 
+			</div>
+		</div>
+		<!-- END DOCK 1 ============================================================ -->
+
+    </div>
+    <!-- main content -->
+    <div class="main">
+     <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <p>Copyright &copy; FC Solutions 2011</p>
+      <p>All rights reserved</p>
+    </div>
+  </form>    
+ </body>
+</html>

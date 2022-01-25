@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<compiler name="sample">
+  <load-module name="light-forms" path="c:\Work\Projects\OMC\LightForms\bin\Debug\LightForms.dll"/>  
+  <load-engine name="parser" module="light-forms" class="LightForms.Engines.Parser" />
+  <call name="parser"></call>
+</compiler>

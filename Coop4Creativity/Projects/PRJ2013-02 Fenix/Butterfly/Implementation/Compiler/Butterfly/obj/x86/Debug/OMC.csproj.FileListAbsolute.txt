@@ -1,0 +1,5 @@
+C:\Work\Projects\OMC\OMC\bin\Debug\OMC.exe
+C:\Work\Projects\OMC\OMC\bin\Debug\OMC.pdb
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\OMC.exe
+C:\Work\Projects\OMC\OMC\obj\x86\Debug\OMC.pdb

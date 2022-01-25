@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model name="sample" version="1.0">
+
+    <concept name="friends">
+
+        <entity name="contact">
+
+            <field name="name" type="string">
+                <attr name="use-for-filter" value="yes"/>
+            </field>
+            
+        </entity>
+
+        <entity name="anotherEntity">
+
+            <field name="name" type="string">
+                <attr name="use-for-filter" value="yes"/>
+            </field>
+
+        </entity>
+
+    </concept>
+
+</model>

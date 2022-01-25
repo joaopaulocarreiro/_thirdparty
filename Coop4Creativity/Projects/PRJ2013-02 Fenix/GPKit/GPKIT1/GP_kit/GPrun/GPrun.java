@@ -1,0 +1,282 @@
+/* -------------------------------------------------------------------------- */
+/* Classe    : GPrun                                                          */
+/* Descrição : Classe principal que engloba toda a informação para um run GP  */
+/* -------------------------------------------------------------------------- */
+package GPrun;
+
+import Misc.*;
+import Expressions.*;
+import Expressions.Elements.*;
+import Fitness.*;
+import GeneticOperators.*;
+import Parameters.*;
+import Population.*;
+import Selection.*;
+import GeneratorFunctions.*;
+import EndRun.*;
+import Specific.*;
+import java.util.Vector;
+import java.util.Random;
+
+
+public class GPrun   
+{
+
+/* ------------------------- constantes de classe --------------------------- */
+
+  public static final String rnd_attemps_error = "random attemps expired.";
+  
+/* -------------------------- variáveis de classe --------------------------- */
+
+  /* gerador de numeros aleatórios */
+  protected Random generator;
+  /* critério de paragem */
+  protected EndRun end_run;
+  
+/* --------------------------- métodos de classe ---------------------------- */
+/* ----------------------------- constructores ------------------------------ */
+
+public GPrun (paramGlobal gi,
+              paramInitPopulation ip,
+              paramBreed b,
+              paramOutput oi,
+              paramLimits l,
+              rawFitness rf,
+              standardFitness sf,
+              adjustedFitness af,
+              proportionateFitness pf,
+              Terminal[] tset,
+              Function[] fset,
+              fitnessCase[] tc,
+              EndRun end)
+  {  
+    this.init_info = (paramInitPopulation) ip.clone();
+    this.breeding_info = (paramBreed) b.clone();
+    this.global_info = (paramGlobal) gi.clone();   
+    this.output_info = (paramOutput) oi.clone();
+    this.limits_info = (paramLimits) l.clone(); 
+    this.raw_fitness_function = (rawFitness) rf.clone();
+    this.standard_fitness_function = (standardFitness) sf.clone();
+    this.adjusted_fitness_function = (adjustedFitness) af.clone();
+    this.proportionate_fitness_function = (proportionateFitness) pf.clone();
+    this.setTerminalSet(tset);
+    this.setFunctionSet(fset);
+    this.setFitnessCases(tc);
+    if (end != null)
+       this.end_run = (EndRun) end.clone();
+    this.generator = new Random();
+  }
+
+public GPrun (paramGlobal gi,
+              paramInitPopulation ip,
+              paramBreed b,
+              paramOutput oi,
+              paramLimits l,
+              rawFitness rf,
+              standardFitness sf,
+              adjustedFitness af,
+              proportionateFitness pf,
+              Terminal[] tset,
+              Function[] fset,
+              fitnessCase[] tc)
+  {  this (gi,ip,b,oi,l,rf,sf,af,pf,tset,fset,tc,null);  }
+
+              
+/* ------------------------- variáveis de instânçia ------------------------- */
+
+  /* informação sobre a geração da população inicial */
+  private paramInitPopulation init_info;
+  /* informação sobre a geração de novas populações */
+  private paramBreed breeding_info;
+  /* informação global sobre o run em geral */
+  private paramGlobal global_info;
+  /* informação sobre os outputs do run */
+  private paramOutput output_info;
+  /* limits das árvores de expressão */
+  private paramLimits limits_info;
+  /* referência da função utilizada para cálculo da raw-fitness */
+  private rawFitness raw_fitness_function;
+  /* referência da função utilizada para cálculo da standard-fitness */
+  private standardFitness standard_fitness_function;
+  /* referência da função utilizada para cálculo da adjusted-fitness */
+  private adjustedFitness adjusted_fitness_function;
+  /* referência da função utilizada para cálculo da proportionate-fitness */
+  private proportionateFitness proportionate_fitness_function;
+  /* tabela com os casos de teste, se aplicável */
+  private fitnessCase[] test_cases;
+  /* conjunto das funções */
+  private Function[] function_set;
+  /* conjunto dos terminais */
+  private Terminal[] terminal_set;
+  
+/* ----------------------- métodos selectores (get/set) --------------------- */
+
+private void setFitnessCases(fitnessCase[] tc)
+  { Object[] aux = Misc.returnArrayUnRepeated (tc);            
+    this.test_cases = new fitnessCase[aux.length];
+    for (int i=0; i < aux.length; i++)
+        this.test_cases[i] = (fitnessCase) ((fitnessCase) aux[i]).clone();  }
+  
+private void setTerminalSet(Terminal[] tset)
+  { Object[] aux = Misc.returnArrayUnRepeated (tset);            
+    this.terminal_set = new Terminal[aux.length];
+    for (int i=0; i < aux.length; i++)
+        this.terminal_set[i] = (Terminal) ((Terminal) aux[i]).clone();  }
+  
+private void setFunctionSet(Function[] fset)
+  { Object[] aux = Misc.returnArrayUnRepeated (fset);            
+    this.function_set = new Function[aux.length];
+    for (int i=0; i < aux.length; i++)
+        this.function_set[i] = (Function) ((Function) aux[i]).clone();  }
+  
+/* ----------------------- métodos de instânçia ----------------------------- */
+/* --------------------------- métodos privados ----------------------------- */
+
+public Generation generateInitialPopulation() 
+                     throws RandomAttempsExpiredException 
+  {  Generation g;
+     Population p;
+
+     generatePopulation genp =  this.init_info.getMethod();
+  
+     genp.setDepthRamp(this.init_info.getDepth());
+     genp.setRandomAttemps(this.init_info.getRandomAttemps());
+     genp.setLimits(this.limits_info);
+     genp.setGenerator(this.generator);
+     
+     p = genp.generate(global_info.getPopulationSize(),
+                       this.function_set,
+                       this.terminal_set);
+     g = new Generation(p,1);
+     g.computeRawFitness(this.raw_fitness_function,this.test_cases);
+     g.computeStandardFitness(this.standard_fitness_function);
+     g.computeAdjustedFitness(this.adjusted_fitness_function);
+     g.computeProportionateFitness(this.proportionate_fitness_function); 
+     g.computeStatistics();    
+     return (g);  
+  }
+
+public int RandomBreedOperator()  
+  { int[] rates = new int[breeding_info.getBreedPhases()];
+    
+    for (int i=0; i < breeding_info.getBreedPhases(); i++)
+      rates[i] = new Double(breeding_info.getRate(i) * 1000000000).intValue();
+
+    // gera um nº aleatório
+    int random_index = generator.nextInt(1000000000);
+    int rate_index = 0;
+    int tot_weigth = 0;
+    boolean endfor = false;
+           
+    // seleciona o rate
+    for (int i=0; (i < rates.length) && (!endfor) ; i++)
+      { tot_weigth += rates[i];
+           if (random_index < tot_weigth)
+              {  rate_index = i;
+                 endfor = true;    }  
+      }
+  
+    // retorna o índice do operador que será aplicado.
+    return (rate_index);  
+  }
+  
+
+public Generation probabilistic_run () throws RandomAttempsExpiredException
+  { Generation g;
+    Population p;
+    int random_attemps;
+    int ngenerations;
+    int v_pop_size = 0;
+    int num_ind = 0;
+    boolean runnable = true;    
+    
+    g = generateInitialPopulation();
+    ngenerations = g.getGenerationNumber();
+    
+
+   while (runnable) 
+   {
+     p = new Population(global_info.getPopulationSize());     
+    
+     while (p.getPopSize() < global_info.getPopulationSize())
+       {
+         /* escolher um operador genético baseado nos seus rates */
+         int gen_op_index = this.RandomBreedOperator();
+         geneticOperator gen_op = breeding_info.getOperator(gen_op_index);
+         gen_op.setGenerator(this.generator);
+         gen_op.setLimits(this.limits_info);
+        
+         /* selecionar, e aplicar as operações genéticas ao individuos. */
+         boolean endwhile = false;
+         random_attemps = init_info.getRandomAttemps();        
+                
+         while ((!endwhile) && (random_attemps > 0)) 
+         {
+           Individual[] i = gen_op.doOperation(g);
+           num_ind = gen_op.getNumReturnInd();
+          
+           /* Se o numero de individuos depois de inseridos aumentam a população
+              para além do nº de individuos máximo entao cortamos o excesso. */
+           v_pop_size = p.getPopSize() + gen_op.getNumReturnInd();
+           if (v_pop_size > global_info.getPopulationSize())
+              num_ind = num_ind - v_pop_size - global_info.getPopulationSize();
+          
+           /* inserir os individuos */
+           try 
+           {  p.addIndividual(i,num_ind);  
+              endwhile = true;  } 
+           catch (PopulationRepeatedIndividualException e1)
+           {  random_attemps--; }
+        
+           if (random_attemps == 0) 
+             { throw new 
+               RandomAttempsExpiredException("GPrun.run():"+rnd_attemps_error);}
+         }
+       }
+      
+     ngenerations++;
+     g = new Generation(p,ngenerations);        
+     g.computeRawFitness(this.raw_fitness_function,this.test_cases);
+     g.computeStandardFitness(this.standard_fitness_function);
+     g.computeAdjustedFitness(this.adjusted_fitness_function);
+     g.computeProportionateFitness(this.proportionate_fitness_function); 
+     g.computeStatistics();           
+     System.out.println("["+ngenerations+"] best ->" + g.find_best());    
+     
+     /* testar as condições de paragem */
+     if (ngenerations >= global_info.getMaxGenerations()) runnable = false;
+     if (end_run != null)
+        if (end_run.stopCriteria(g)) runnable = false;
+       
+   }      
+    return(g);   
+  }
+  
+public Generation run () throws RandomAttempsExpiredException
+  {
+
+       return (this.probabilistic_run());
+  }
+  
+/* ----------------------- métodos das interfaces --------------------------- */
+
+public String toString()
+  { String str_aux;
+
+    str_aux = 
+     "terminal set = " + Misc.toStringArray(this.terminal_set) + "\n" +
+     "function set = " + Misc.toStringArray(this.function_set) + "\n" + 
+     this.global_info.toString() + 
+     this.limits_info.toString() + 
+     this.init_info.toString() + 
+     this.breeding_info.toString() + 
+     this.output_info.toString() + 
+     "raw fitness=" + this.raw_fitness_function.toString() + "\n"+ 
+     "standard fitness=" + this.standard_fitness_function.toString() + "\n";
+
+    
+    return (str_aux);  
+  }
+}
+
+/* -------------------------------------------------------------------------- */

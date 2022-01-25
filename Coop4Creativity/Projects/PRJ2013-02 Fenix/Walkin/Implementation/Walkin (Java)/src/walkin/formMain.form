@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.7" maxVersion="1.7">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="planningContainer" alignment="0" pref="598" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="goLeftButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="goRightButton" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="463" max="32767" attributes="0"/>
+                          <Component id="goUpButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="goDownButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="goLeftButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="goRightButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="goUpButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="planningContainer" pref="125" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="goDownButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="goLeftButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="goLeftButton.text"/>
+            <Property name="name" type="java.lang.String" value="goLeftButton" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="goRightButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="goRightButton.text"/>
+            <Property name="name" type="java.lang.String" value="goRightButton" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="goUpButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="goUpButton.text"/>
+            <Property name="name" type="java.lang.String" value="goUpButton" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="goDownButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="goDownButton.text"/>
+            <Property name="actionCommand" type="java.lang.String" resourceKey="goDownButton.actionCommand"/>
+            <Property name="name" type="java.lang.String" value="goDownButton" noResource="true"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="planningContainer">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
+                <EtchetBorder bevelType="0"/>
+              </Border>
+            </Property>
+            <Property name="name" type="java.lang.String" value="planningContainer" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="importMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="importHotelAction" methodName="importHotelAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="importMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="importMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="importMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exportMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="exportHotelAction" methodName="exportHotelAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="exportMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="exportMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="exportMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep4">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sep4" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="exitMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="exitMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="entityMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="entityMenu.text"/>
+            <Property name="name" type="java.lang.String" value="entityMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="newCustomerMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="newCardexAction" methodName="newCardexAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="newCustomerMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="newCustomerMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="newCustomerMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="searchCustomerMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="searchCardexAction" methodName="searchCardexAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="searchCustomerMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="searchCustomerMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="searchCustomerMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep5">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sep5" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="newEntityMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="newEntityAction" methodName="newEntityAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="newEntityMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="newEntityMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="newEntityMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="searchEntityMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="searchEntityAction" methodName="searchEntityAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="searchEntityMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="searchEntityMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="searchEntityMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="receptionMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="receptionMenu.text"/>
+            <Property name="name" type="java.lang.String" value="receptionMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="newBookingMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="newBookingAction" methodName="newBookingAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="newBookingMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="newBookingMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="newBookingMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="searchBookingMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="searchBookingAction" methodName="searchBookingAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="searchBookingMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="searchBookingMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="searchBookingMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="bookingChartMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="bookingChartMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="bookingChartMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="calendarMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="calendarMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="calendarMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep7">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sep7" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="checkInMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="checkInAction" methodName="checkInAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="checkInMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="checkInMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="checkInMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="checkOutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="checkOutAction" methodName="checkOutAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="checkOutMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="checkOutMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="checkOutMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="nightAuditMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="nightAuditMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="nightAuditMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep8">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sep8" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="chargeExtraMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="chargeExtraAction" methodName="chargeExtraAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="chargeExtraMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="chargeExtraMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="chargeExtraMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="paymentExtraMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="paymentsAction" methodName="paymentsAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="paymentExtraMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="paymentExtraMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="paymentExtraMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="toolMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="toolMenu.text"/>
+            <Property name="name" type="java.lang.String" value="toolMenu" noResource="true"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="configMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="configMenu.text"/>
+            <Property name="name" type="java.lang.String" value="configMenu" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="hotelConfigMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="hotelConfigAction" methodName="hotelConfigAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="hotelConfigMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="hotelConfigMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="hotelConfigMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="sep6">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="sep6" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="systemConfigMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.formMain" id="systemConfigAction" methodName="systemConfigAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="systemConfigMenuItem.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="systemConfigMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="systemConfigMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="helpMenu.text"/>
+            <Property name="name" type="java.lang.String" value="helpMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="helpMenuItem">
+              <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Ctrl+H"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="helpMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="helpMenuItem" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="walkin.WalkinView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="text" type="java.lang.String" resourceKey="aboutMenuItem.text"/>
+                <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="statusPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="statusPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="statusPanelSeparator" alignment="0" pref="618" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusMessageLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <Component id="progressBar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusAnimationLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="statusPanelSeparator" min="-2" pref="2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="statusMessageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="statusAnimationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="progressBar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSeparator" name="statusPanelSeparator">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusPanelSeparator" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusMessageLabel">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusMessageLabel" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusAnimationLabel">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="name" type="java.lang.String" value="statusAnimationLabel" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JProgressBar" name="progressBar">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="progressBar" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JToolBar" name="quickToolbar">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+        <Property name="rollover" type="boolean" value="true"/>
+        <Property name="name" type="java.lang.String" value="quickToolbar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="newCustomer">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="newCardexAction" methodName="newCardexAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="newCustomer.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="newCustomer.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="newCustomer.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="newCustomer" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="searchCustomer">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="searchCardexAction" methodName="searchCardexAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="searchCustomer.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="searchCustomer.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="searchCustomer.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="searchCustomer" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="newEntity">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="newEntityAction" methodName="newEntityAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="newEntity.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="newEntity.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="newEntity.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="newEntity" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="searchEntity">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="searchEntityAction" methodName="searchEntityAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="searchEntity.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="searchEntity.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="searchEntity.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="searchEntity" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="sep1">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sep1" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="newBooking">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="newBookingAction" methodName="newBookingAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="newBooking.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="newBooking.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="newBooking.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="newBooking" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="searchBooking">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="searchBookingAction" methodName="searchBookingAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="searchBooking.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="searchBooking.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="searchBooking.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="searchBooking" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="sep2">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sep2" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="checkIn">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="checkInAction" methodName="checkInAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="checkIn.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="checkIn.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="checkIn.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="checkIn" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="checkOut">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="checkOutAction" methodName="checkOutAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="checkOut.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="checkOut.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="checkOut.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="checkOut" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="sep3">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sep3" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="chargeExtra">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="chargeExtraAction" methodName="chargeExtraAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="chargeExtra.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="chargeExtra.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="chargeExtra.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="chargeExtra" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="paymentExtra">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="paymentsAction" methodName="paymentsAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="paymentExtra.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="paymentExtra.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="paymentExtra.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="paymentExtra" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JToolBar$Separator" name="sep9">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="sep9" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="stats">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="walkin.formMain" id="hotelStatsAction" methodName="hotelStatsAction"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" resourceKey="stats.icon"/>
+            <Property name="text" type="java.lang.String" resourceKey="stats.text"/>
+            <Property name="toolTipText" type="java.lang.String" resourceKey="stats.toolTipText"/>
+            <Property name="focusable" type="boolean" value="false"/>
+            <Property name="horizontalTextPosition" type="int" value="0"/>
+            <Property name="name" type="java.lang.String" value="stats" noResource="true"/>
+            <Property name="verticalTextPosition" type="int" value="3"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="menuBar"/>
+    </Property>
+    <Property name="statusBar" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="statusPanel"/>
+    </Property>
+    <Property name="toolBar" type="javax.swing.JToolBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="quickToolbar"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,44,0,0,2,106"/>
+  </AuxValues>
+</Form>

@@ -1,0 +1,11 @@
+Experimenta as series:
+
+123.ts - mais facil de todas. sequencia de 1 a 20
+passengers.ts - serie com tendencia e estacao. janela ate 13.
+prices.ts - serie grande com tendencia. ate agora melhores resultados
+            com janela de 1
+sunspots.ts - serie nao linear, muito conhecida. mais dificil de prever.
+henon.ts - serie caotica artificial, nao linear
+-- 
+Paulo Alexandre Ribeiro Cortez 
+PHD Student in Computer Science, University of Minho, Portugal

@@ -1,0 +1,75 @@
+/**
+ * FC Solutions
+ * Master CSS Style
+ * 18/Jul/2011
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("images/bg.jpg") repeat-x scroll 0 0 #BEC3C6;
+  color: #555555;
+  font-family: Arial;
+  font-size: 8pt;
+}
+
+#wrap {
+  background: url("images/light.gif") no-repeat scroll center top transparent;
+  padding: 20px 0;
+  min-height: 600px;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1008px;
+}
+
+/* header */
+#header {
+  height: auto;
+  padding: 2%;
+  background-color:black;
+  border-bottom: 1px solid red; 
+  background: url("images/header.png") no-repeat scroll 0 0 transparent; 
+}
+
+#title a {
+    color: #FFFFFF;
+    display: block;
+    font-family: Arial;
+    height: 30px;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+#caption {
+  width:100%;
+}
+
+/* content */
+#content {
+  min-height:800px;
+  background-color:white;
+}
+
+/* footer */
+#footer {
+  background: url("images/footer.png") no-repeat scroll 0 0 transparent;
+  border-top: 1px solid #CCCCCC;
+  display: block;
+  height: 88px;
+  width: 100%;
+}
+
+/**
+ * CSS Util
+ * Generic CSS styles used all around.
+ */
+.fc-clear-float {
+  clear:both;
+}
+
+

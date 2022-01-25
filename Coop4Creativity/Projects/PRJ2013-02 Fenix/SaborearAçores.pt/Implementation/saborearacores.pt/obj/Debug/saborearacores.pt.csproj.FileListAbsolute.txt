@@ -1,0 +1,14 @@
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\bin\saborearacores.pt.dll
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\bin\saborearacores.pt.pdb
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\obj\Debug\saborearacores.pt.dll
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\obj\Debug\saborearacores.pt.pdb
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\bin\EntityFramework.dll
+C:\Users\joao.carreiro\Desktop\FC\saborearacores.pt\saborearacores.pt\bin\EntityFramework.xml
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\bin\saborearacores.pt.dll
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\bin\saborearacores.pt.pdb
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\bin\EntityFramework.dll
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\bin\EntityFramework.xml
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\obj\Debug\saborearacores.pt.dll
+C:\Work\2. FCSolutions\Desenvolvimento\SaborearAçores.pt\Implementation\saborearacores.pt\obj\Debug\saborearacores.pt.pdb
